@@ -154,5 +154,5 @@ curl -s -X POST http://localhost:3000/api/lottery/draw \
 | `MCP_INTEGRATION.md` | MCP Server / Tool / 调用流程与业务价值 | 已具备 |
 | `mcp-config.example.json` | 脱敏 MCP 配置示例（仅环境变量占位符） | 已具备 |
 | `src/` | 源代码 | 已具备 |
-| `docs/screenshots/` | 界面预览截图 | 本地已有，待提交推送 |
+| `docs/screenshots/` | 界面预览截图 | 已具备 |
 | `workbuddy.md` | WorkBuddy 专项奖励用对话上下文 | 可选；未使用 WorkBuddy 可不交 |
