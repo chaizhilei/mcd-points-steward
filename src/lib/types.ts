@@ -61,25 +61,6 @@ export type LotteryInfo = {
   prizes?: LotteryPrize[];
 };
 
-export type MyPrize = {
-  id?: string | number;
-  name?: string;
-  imageUrl?: string;
-  prizeType?: string;
-  recordTime?: string;
-  status?: string | number;
-  statusText?: string;
-  timeRemindText?: string;
-};
-
-export type MallOrder = {
-  orderId?: string;
-  orderStatus?: number;
-  orderStatusTitle?: string;
-  totalCount?: number;
-  goods?: unknown[];
-};
-
 export type SkuSpec = {
   specMain?: string;
   specItem?: string;
@@ -114,6 +95,8 @@ export type AdviceRecommendation = {
   price?: string;
   selling?: string;
   valueScore: number;
+  /** true = 积分不足，仅预览 */
+  locked?: boolean;
 };
 
 export type AdvisorResult = {
@@ -131,7 +114,5 @@ export type PortfolioResponse = {
   account: AccountInfo;
   advice: AdvisorResult;
   lottery: LotteryInfo | null;
-  prizes: MyPrize[];
-  orders: MallOrder[];
   catalogCount: number;
 };
