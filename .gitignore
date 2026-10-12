@@ -37,6 +37,11 @@ yarn-error.log*
 # local copy of official contest rules repo
 /challenge/
 
+# IDE
+.idea/
+.vscode/
+*.swp
+
 # vercel
 .vercel
 

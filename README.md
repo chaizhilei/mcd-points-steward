@@ -8,6 +8,28 @@
 
 一句话：盯紧过期积分，先兑券、再抽奖，你点确认才执行。
 
+## 界面预览
+
+本地运行 `npm run dev` 后打开 [http://localhost:3000](http://localhost:3000) 可见如下界面（截图来自真实 MCP 数据，已不含 Token / 手机号等敏感信息）。
+
+### 过期风险一览
+
+![过期风险与处置建议](./docs/screenshots/01-risk-overview.png)
+
+一眼看到可用积分、本月/下月将过期与历史流失，并给出主推兑换建议。
+
+### 目标券推荐
+
+![攒分目标与兑券列表](./docs/screenshots/02-advice-redeem.png)
+
+按面额/积分估算性价比，列出可冲刺的目标券；积分不足时仅预览，不误触兑换。
+
+### 抽奖二次确认入口
+
+![抽奖区默认不推荐](./docs/screenshots/03-lottery.png)
+
+展示抽奖消耗与奖池，默认建议先兑券；资格不足时不可抽，有资格也需二次确认。
+
 ## 目标用户
 
 - 麦享会会员：积分较多、不清楚何时过期、不知道兑什么划算
@@ -125,10 +147,12 @@ curl -s -X POST http://localhost:3000/api/lottery/draw \
 
 ## 参赛材料清单
 
-| 文件 | 说明 |
-|---|---|
-| `README.md` | 本文件 |
-| `CONTEST_DECLARATION.md` | 官方参赛声明（内容未改动） |
-| `MCP_INTEGRATION.md` | MCP Server / Tool / 调用流程与业务价值 |
-| `mcp-config.example.json` | 脱敏 MCP 配置示例 |
-| `src/` | 源代码 |
+| 文件 | 说明 | 状态 |
+|---|---|---|
+| `README.md` | 项目介绍、安装、使用示例、目标用户 | 已具备 |
+| `CONTEST_DECLARATION.md` | 官方参赛声明（内容未改动） | 已具备 |
+| `MCP_INTEGRATION.md` | MCP Server / Tool / 调用流程与业务价值 | 已具备 |
+| `mcp-config.example.json` | 脱敏 MCP 配置示例（仅环境变量占位符） | 已具备 |
+| `src/` | 源代码 | 已具备 |
+| `docs/screenshots/` | 界面预览截图 | 本地已有，待提交推送 |
+| `workbuddy.md` | WorkBuddy 专项奖励用对话上下文 | 可选；未使用 WorkBuddy 可不交 |
